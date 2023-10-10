@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+
+        .payment-form {
+            width: 30%;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #c7ecc7;
+        }
+        
+        .ventana {
+             background: olive; /* Color verde claro */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .bienvenido {
+            background-color: royalblue;
+        }
+        #paymentMethod:checked + .month-options {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-form">
+        <h1>Formulario de Pago</h1>
+        <form>
+            <label for="paymentMethod">Selecciona el Mes de Pago:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+            </select>
+
+            <button type="submit">Pagar</button>
+        </form>
+        <p>ejemplo de acordeon en html</p>
+        <details class="bienvenido">
+           <h1>Bienvenidos</h1><br>
+           <p>bienvenidos a todos</p>
+        </details><br>
+        <button popovertarget="ventana">Mensaje</button>
+        <div clas="ventana" popover id="ventana"><centeer> <h1>POPOVER</h1><br>
+        tengan todos muy buenas tardes </centeer> </div>
+        <br>
+    </div>
+</body>
+</html>
+
+ 
